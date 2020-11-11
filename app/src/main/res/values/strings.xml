@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Radar</string>
+    <string name="card_content">UUID: %1s\nSIGNAL: %2sdBm\nPAYLOAD: %3s</string>
+</resources>

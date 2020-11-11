@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragment_dashboard">
+
+    <fragment
+        android:id="@+id/fragment_dashboard"
+        android:name="com.test.analyzer.radar.presentation.DashboardFragment">
+        <action
+            android:id="@+id/action_to_fragment_phone_messages"
+            app:destination="@id/fragment_phone_messages"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/fragment_dashboard" />
+
+        <action
+            android:id="@+id/action_to_fragment_wifi_measurements"
+            app:destination="@id/fragment_wifi_measurements"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/fragment_dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_phone_messages"
+        android:name="com.test.analyzer.radar.presentation.PhoneMessagesFragment"/>
+
+    <fragment
+        android:id="@+id/fragment_wifi_measurements"
+        android:name="com.test.analyzer.radar.presentation.WifiMeasurementFragment"/>
+
+</navigation>
